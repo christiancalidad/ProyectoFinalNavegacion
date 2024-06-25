@@ -104,7 +104,7 @@ def main():
     #Cargar el escalador
     scaler = joblib.load('scaler.pkl')
     #Cargar el modelo de aprendizaje profundo
-    model = tf.keras.models.load_model('model.h5', compile=False)
+    model = tf.keras.models.load_model('model_project_without_preprocessing.h5', compile=False)
 
 
     while robot.step() != -1:
